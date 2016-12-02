@@ -12,11 +12,13 @@ class TemperatureConverter:
     def __init__(self, temperature):
         self.temperature = temperature
 
-    def to_c(self):
-        return self.f_to_c(self.temperature)
+    @classmethod
+    def to_c(cls):
+        return TemperatureConverter.f_to_c(cls.temperature)
 
-    def to_f(self):
-        return self.c_to_f(self.temperature)
+    @classmethod
+    def to_f(cls):
+        return TemperatureConverter.c_to_f(cls.temperature)
 
     @staticmethod
     def c_to_f(celsius):
