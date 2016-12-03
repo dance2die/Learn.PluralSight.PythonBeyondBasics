@@ -14,11 +14,11 @@ class TemperatureConverter:
 
     @classmethod
     def to_c(cls):
-        return TemperatureConverter.f_to_c(cls.temperature)
+        return cls.f_to_c(cls.temperature)
 
     @classmethod
     def to_f(cls):
-        return TemperatureConverter.c_to_f(cls.temperature)
+        return cls.c_to_f(cls.temperature)
 
     @staticmethod
     def c_to_f(celsius):
