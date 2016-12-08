@@ -6,7 +6,7 @@ def main():
     while True:
         try:
             guess = int(input("? "))
-        except:
+        except ValueError:
             continue
 
         if guess == number:
